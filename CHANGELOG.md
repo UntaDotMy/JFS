@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.1] - 2025-03-25
+
+### Changed
+- Enhanced mobile navigation with improved layout and accessibility
+- Optimized mobile menu positioning and scroll behavior
+- Streamlined mobile navigation UI by removing redundant theme switcher
+- Improved mobile menu portal implementation for better performance
+- Updated branding from "Student Feedback" to "Jazro Feedback System" across the application
+- Enhanced mobile responsiveness with "JFS" abbreviation for smaller screens
+
+### Fixed
+- Fixed mobile menu cutoff issues when scrolling
+- Improved mobile menu visibility and interaction on all screen sizes
+- Enhanced mobile navigation accessibility and usability
+- Resolved z-index conflicts in mobile navigation
+
 ## [1.7.0] - 2025-03-25
 
 ### Added
