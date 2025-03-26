@@ -5,6 +5,51 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.1] - 2025-03-26
+
+### Changed
+- Removed cancel button from all options in the feedback form to make feedback submission mandatory
+- Centered the submit button in the parent modal for better focus and accessibility
+- Streamlined the feedback submission process with clearer required inputs
+- Simplified the parent information UI by removing unnecessary options
+- Enhanced form layout with better visual guidance and focus
+
+### Fixed
+- Improved the form submission flow by making all feedback options mandatory
+- Enhanced visual hierarchy in feedback submission forms
+- Better spacing and alignment for modal button layout
+
+## [1.8.0] - 2025-03-26
+
+### Added
+- Multilingual support with language switching between English and Bahasa Melayu
+- Comprehensive translations for all UI elements, including forms, buttons, and feedback
+- Language toggle button with EN/MY indicator in the interface header
+- Malaysian phone number validation for Option 3 referrals (max 12 digits, proper format)
+- Referral management system in Admin dashboard with dedicated tab
+- Class-based grouping of referrals for better organization
+- Class-specific export functionality for referral data
+- Ability to export all referrals or just those from a specific class
+- Validation to ensure referral phone numbers are unique within each submission
+- Translated toast messages for all notifications, warnings, and errors
+- Fixed positioning of theme and language toggles to prevent overlap on mobile screens
+
+### Changed
+- Updated form validation to check for valid Malaysian phone numbers
+- Enhanced referral input UI with proper validation feedback
+- Improved admin dashboard with grouped referral displays
+- Optimized database structure for storing and retrieving referral data
+- Enhanced export functionality with better Excel formatting
+- Updated UI to accommodate language switching
+- Improved mobile responsiveness for theme and language toggle buttons
+- Enhanced accessibility for multilingual content
+
+### Fixed
+- Proper validation of Malaysian phone numbers in the referral form
+- Fixed language toggle button positioning on mobile screens
+- Improved toast notification visibility and translation
+- Fixed unique phone number validation in referral submissions
+
 ## [1.7.1] - 2025-03-25
 
 ### Changed
