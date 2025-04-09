@@ -2,6 +2,59 @@
 
 All notable changes to the Jazro Student Vote project will be documented in this file.
 
+## [1.8.5] - 2025-04-10
+
+### Changed
+- Redesigned User Profile page (`Profile.tsx`) for a modern look and improved mobile responsiveness.
+- Adjusted header layout, avatar positioning, and spacing.
+- Refined form input styles, labels, and password strength indicator.
+- Updated tab navigation styling for desktop and mobile (using a grid for mobile tabs).
+- Fixed avatar cutoff issue on mobile view.
+
+
+## [1.8.4] - 2025-04-10
+
+### Added
+- Site-wide maintenance mode, toggleable by admin via Firebase (`/config/maintenanceMode`).
+- `MaintenanceWrapper` component to restrict access during maintenance (excludes `/login`).
+- Dedicated maintenance page (`MaintenancePage.tsx`) with bilingual text (Malay/English), animated SVG, and contact information.
+- Dedicated error page (`ErrorPage.tsx`) for routing errors (404 etc.) with contact info.
+- Automatic cleanup of leading numbers/whitespace from pasted student lists in "Create Class".
+
+### Changed
+- Refactored maintenance check logic from `PrivateRoute` to `MaintenanceWrapper`.
+- Updated `App.tsx` routing structure to use `MaintenanceWrapper` and `ErrorPage`.
+- Improved coupon modal UI and SVG ticket design (`CouponTicketSVG`).
+- Improved copy-to-clipboard mechanism for coupon code with fallback (`document.execCommand`).
+- Made coupon modal non-dismissible via backdrop click.
+- Adjusted text sizes and layout on maintenance page for compactness and hierarchy.
+
+### Fixed
+- Potential inability for non-admins to access `/login` during maintenance mode.
+- Fixed typing issue with `Layout` component receiving `children` in `App.tsx`.
+
+## [1.8.3] - 2025-04-09
+
+### Added
+- Three-step class creation process for improved mobile UX
+- Animated UI transitions for location and program selection
+- Interactive selection UI with fade and slide animations
+- Custom CSS animations in index.css
+- VSCode settings for ignoring CSS linting errors
+
+### Changed
+- Enhanced coupon display with larger, more readable code
+- Improved discount coupon modal layout and text sizing
+- Streamlined discount claiming with instant navigation
+- Removed unnecessary fullscreen mode from class creation
+- Reorganized form steps for better mobile experience
+
+### Fixed
+- Resolved TypeScript error with unused ChevronDown import
+- Fixed CSS linting issues with @variant rule
+- Improved mobile form layout on smaller screens
+- Enhanced coupon code visibility and copying UX
+
 ## [1.8.2] - 2025-04-08
 
 ### Fixed
