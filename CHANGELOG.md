@@ -2,6 +2,22 @@
 
 All notable changes to the Jazro Student Vote project will be documented in this file.
 
+## [1.8.6] - 2025-04-16
+
+### Changed
+- **Redesigned Feedback Form (`FeedbackForm.tsx`)**:
+  - Modernized layout with improved spacing, cards, and visual hierarchy.
+  - Enhanced header section for class details.
+  - Updated accordion style for "Important Question" and "How to Vote" sections.
+  - Improved mobile responsiveness, especially for student voting buttons.
+  - Relocated theme and language toggles to the top-right corner for better usability.
+  - Adjusted feedback option card layout (icon top, title, text) and added theme-aware borders.
+- Updated `README.md` to reflect UI changes.
+
+### Fixed
+- Corrected registration analytics tracking: `registrationType` is now set to "Online Class (jazarian)" for classes with location "ONLINE".
+
+
 ## [1.8.5] - 2025-04-10
 
 ### Changed
