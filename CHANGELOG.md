@@ -2,6 +2,18 @@
 
 All notable changes to the Jazro Student Vote project will be documented in this file.
 
+## [1.8.7] - 2025-06-10
+
+### Changed
+- **Updated Online Class Coupon Code**: Changed coupon code for Wednesday online classes from "REGSEL" to "REGRAB"
+  - Affects both class creation and feedback form coupon display
+  - Updated coupon logic in `Classes.tsx` and `FeedbackForm.tsx`
+- **Dependency Cleanup**: Removed unused Three.js dependencies to optimize bundle size
+  - Removed `@react-three/fiber`, `@react-three/drei`, and `three` packages
+
+### Fixed
+- Improved package.json structure by removing unnecessary 3D graphics dependencies
+
 ## [1.8.6] - 2025-04-16
 
 ### Changed
