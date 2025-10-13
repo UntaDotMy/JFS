@@ -2,6 +2,30 @@
 
 All notable changes to the Jazro Student Vote project will be documented in this file.
 
+## [2.0.0] - 2025-10-13
+
+### Added
+- Container queries for Admin pages; responsive grids adapt to container width.
+- Lighthouse CI config and audit script (`npm run audit`).
+- Fluid typography using `clamp()` for headings in `index.css`.
+- Mobile-safe viewport updates: `viewport-fit=cover`, dvh/svh usage, and safe-area bottom padding.
+
+### Changed
+- Mobile navigation: improved dark-theme visibility; Status/Profile entries now match design.
+- Tabs: 44px touch target on mobile; count bubbles refined; overflow handling.
+- Classes page: active/completed card action buttons now wrap and can expand to full width on small screens.
+- Live Preview header stacks on mobile to avoid overflow.
+- Dashboard: “Trend insight” and “Location mix” cards reflow on small screens to prevent cramping.
+- Coupon modal: ticket text wrapping and CTA button text no longer overflows.
+- Footer: displays JFS logo and updated copyright line.
+
+### Fixed
+- Removed nested button structure in Create Class (location/programme) to prevent hydration warning.
+- Fixed pagination overflow in EngagementAll; controls stack and wrap on narrow screens.
+- Avatar role dot alignment on mobile now matches desktop (outside-offset).
+- Normalized modal widths across app with clamped Tailwind utilities.
+- Addressed various small touch-target and overflow issues across pages.
+
 ## [1.8.7] - 2025-06-10
 
 ### Changed
