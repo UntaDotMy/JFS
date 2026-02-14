@@ -2,6 +2,24 @@
 
 All notable changes to the Jazro Student Vote project will be documented in this file.
 
+## [2.1.0] - 2026-02-14
+
+### Added
+- Staff-only `JFS Helper` assistant dock with per-user chat history, typing indicator, and copy-message action.
+- Assistant feedback modal that sends issue/improvement/general reports to WhatsApp (new tab) with optional latest 5-message context.
+- Responsive E2E coverage for authenticated routes and high-risk UI states (classes modal flows, admin dense states, assistant dock input visibility).
+- Route prefetch utility (`src/lib/route-prefetch.ts`) for idle/intent-based navigation preloading.
+
+### Changed
+- Assistant answer flow now prioritizes system-context guard answers, workflow guidance, and provider fallback from Cerebras to Groq on retry-eligible failures.
+- Navigation responsiveness improved with lighter transition classes and route chunk prefetch on hover/focus/pointer intent.
+- Large route paths optimized with targeted lazy-loading (`qrcode.react`, Excel export utilities, route chunks).
+
+### Fixed
+- Hardened presence session bootstrap when browser storage is restricted (safe random fallback).
+- Hardened locale preference read path against blocked `localStorage` environments.
+- Improved responsive stability for mobile/tablet/desktop in route-level and modal-level overflow checks.
+
 ## [2.0.0] - 2025-10-13
 
 ### Added
